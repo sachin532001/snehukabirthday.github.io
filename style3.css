@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: cursive; */
+    color: #fff;
+}
+.back{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: url(bg7.jpg);
+    background-size: cover;
+    z-index: -100;
+}
+.area{
+    font-size: 190px;
+    font-weight: bold;
+
+}
+.one{
+    /* padding: 2%; */
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+
+}
+.name{
+    font-size: 280px;
+    padding-top:  5%;
+    padding-right: 20px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+.det{
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 150px;
+    /* padding: 10%; */
+}
+.imgarea{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 150px;
+}
+.img{
+    width: 50%;
+    margin-top: 80px;
+
+}
+.img{
+    width: 100%;
+}
+.right{
+    margin-left: 62%;
+}
+img{
+    border-radius: 23px;
+}

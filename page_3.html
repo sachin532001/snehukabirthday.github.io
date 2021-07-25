@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 3 </title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div class="back"></div>
+    <div class="area">
+        <div class="one">
+            Happy Birthday
+        </div>
+        <div class="name">Sneha</div>
+        <div class="det">
+        </div>
+    </div>
+    <div class="imgarea">
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="s1.png" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="s2.png" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="s3.png" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="s4.png" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="s5.png" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="s6.png" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="s7.png" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="s8.png" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="s9.png" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="s10.png" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="s11.png" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="s12.png" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="s13.png" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="s14.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        AOS.init(0);
+
+        let scrollerID;
+        let paused = true;
+        let speed = 2; // 1 - Fast | 2 - Medium | 3 - Slow
+        let interval = speed * 5;
+
+        function startScroll() {
+            let id = setInterval(function () {
+                window.scrollBy(0, 2);
+                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                    // Reached end of page
+                    stopScroll();
+                }
+            }, interval);
+            return id;
+        }
+
+        function stopScroll() {
+            clearInterval(scrollerID);
+        }
+
+        document.body.addEventListener('click', function (event) {
+            // if (event.which == 13 || event.keyCode == 13) {
+            {
+                if (paused == true) {
+                    scrollerID = startScroll();
+                    paused = false;
+                }
+                else {
+                    stopScroll();
+                    paused = true;
+                }
+            }
+        }, true);
+    </script>
+</body>
+
+</html>
